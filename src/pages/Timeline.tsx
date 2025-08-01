@@ -5,7 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, Clock, CheckCircle, AlertCircle, Download, Mail } from "lucide-react";
+import { Calendar, Clock, CheckCircle, AlertCircle, Download, Mail, Users } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 interface TimelineItem {
@@ -329,6 +329,26 @@ const Timeline = () => {
               </div>
             </CardContent>
           </Card>
+
+          {/* Account Feature Notice */}
+          {timeline.length > 0 && (
+            <Card className="shadow-medium mb-6 border-primary/20 bg-primary/5">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                    <Users className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold">Save Your Progress</h3>
+                    <p className="text-sm text-muted-foreground">Create an account to save your timeline and track progress</p>
+                  </div>
+                </div>
+                <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
+                  Create Account (Coming Soon)
+                </Button>
+              </CardContent>
+            </Card>
+          )}
 
           {/* Timeline Results */}
           {timeline.length > 0 && (

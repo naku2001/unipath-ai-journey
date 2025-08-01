@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { MessageCircle, Search, Calendar, GraduationCap, Users, Globe, Award } from "lucide-react";
+import { MessageCircle, Search, Calendar, GraduationCap, Users, Globe, Award, Instagram, Linkedin, Twitter } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/unipath-hero.jpg";
 
@@ -30,10 +30,10 @@ const Home = () => {
   ];
 
   const stats = [
-    { icon: Users, label: "Students Helped", value: "10,000+" },
-    { icon: GraduationCap, label: "Universities Covered", value: "500+" },
-    { icon: Globe, label: "Countries Served", value: "50+" },
-    { icon: Award, label: "Success Rate", value: "95%" },
+    { icon: GraduationCap, label: "Universities in Database", value: "20+" },
+    { icon: Globe, label: "Application Pathways", value: "Multiple" },
+    { icon: Calendar, label: "Timeline Templates", value: "Personalized" },
+    { icon: MessageCircle, label: "AI-Powered Support", value: "24/7" },
   ];
 
   return (
@@ -141,7 +141,7 @@ const Home = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">Ready to Start Your Journey?</h2>
           <p className="text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-            Join thousands of international students who have successfully navigated the U.S. university application process with UniPath AI
+            Take the first step towards your U.S. university journey with AI-powered guidance and personalized support
           </p>
           <Link to="/chat">
             <Button variant="hero" size="lg" className="bg-white text-primary hover:bg-gray-100">
@@ -151,6 +151,79 @@ const Home = () => {
           </Link>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="bg-background border-t py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-8">
+            <div>
+              <h3 className="text-xl font-bold mb-4">UniPath AI</h3>
+              <p className="text-muted-foreground">
+                Your AI-powered companion for navigating U.S. university applications with confidence.
+              </p>
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+              <div className="space-y-2">
+                <Link to="/chat" className="block text-muted-foreground hover:text-primary transition-colors">
+                  AI Assistant
+                </Link>
+                <Link to="/matcher" className="block text-muted-foreground hover:text-primary transition-colors">
+                  School Matcher
+                </Link>
+                <Link to="/timeline" className="block text-muted-foreground hover:text-primary transition-colors">
+                  Timeline Generator
+                </Link>
+              </div>
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
+              <div className="flex space-x-4">
+                <a 
+                  href="https://linkedin.com/company/unipath-ai" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <Linkedin className="w-6 h-6" />
+                </a>
+                <a 
+                  href="https://twitter.com/unipathAI" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <Twitter className="w-6 h-6" />
+                </a>
+                <a 
+                  href="https://instagram.com/unipath.ai" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <Instagram className="w-6 h-6" />
+                </a>
+                <a 
+                  href="https://tiktok.com/@unipath.ai" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <svg 
+                    className="w-6 h-6 fill-current" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="border-t mt-8 pt-8 text-center text-muted-foreground">
+            <p>&copy; 2024 UniPath AI. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
