@@ -1,73 +1,34 @@
-# Welcome to your Lovable project
+# 🎓 AI University Application Assistant
 
-## Project info
+An all-in-one AI-powered web application that helps students apply to universities — from researching programs to checking admission requirements — using natural language processing (NLP).
 
-**URL**: https://lovable.dev/projects/00537392-1fe6-4eb6-8a78-e15db4cb6fc5
+Built with:
+- 🧠 NLP + LLMs for smart Q&A and research
+- ⚡️ React (Vite) frontend for fast, modern UI
+- 🔌 Flask + FastAPI backend for scalable APIs
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🚀 Features
 
-**Use Lovable**
+- 🔍 **University Search** — Ask about programs, majors, locations, and costs.
+- 🧾 **Requirement Checker** — Get real-time admission requirements for various schools.
+- 🤖 **Smart Assistant** — NLP-based chatbot to answer questions like:
+  - *"What are the top AI programs in the US?"*
+  - *"What GPA is needed for Stanford MSCS?"*
+- 📋 **Document Support** — Help with SOPs, recommendation letters, and deadlines.
+- 🌍 **International Student Focus** — Tailored guidance for students applying from abroad.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/00537392-1fe6-4eb6-8a78-e15db4cb6fc5) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🧱 Tech Stack
 
-**Use your preferred IDE**
+| Layer         | Technology          |
+|---------------|---------------------|
+| 💻 Frontend   | React + Vite        |
+| ⚙️ Backend    | Flask + FastAPI     |
+| 🧠 AI Engine  | OpenAI / NLP Models |
+| 🔍 Web Search | Tavily, LlamaIndex  |
+| 🌐 APIs       | University DBs, Custom Scrapers |
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/00537392-1fe6-4eb6-8a78-e15db4cb6fc5) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
